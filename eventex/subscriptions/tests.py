@@ -61,18 +61,15 @@ class SubscribePostTest(TestCase):
         self.assertEqual(expect, email.subject)
 
     def test_subscription_email_from(self):
-        """ Email sender should match 'contato@eventex.com.br' """
+        """ Email sender should match 'lucabezerra@gmail.com' """
         email = mail.outbox[0]
-        expect = 'contato@eventex.com.br'
+        expect = 'lucabezerra@gmail.com'
         self.assertEqual(expect, email.from_email)
 
     def test_subscription_email_to(self):
-        """
-            Email recipient should match 'lucabezerra@gmail.com' and
-            'contato@eventex.com.br'
-        """
+        """ Email recipient should match 'lucabezerra@gmail.com' """
         email = mail.outbox[0]
-        expect = ['lucabezerra@gmail.com', 'contato@eventex.com.br']
+        expect = ['lucabezerra@gmail.com']
         self.assertEqual(expect, email.to)
 
     def test_subscription_email_body(self):
