@@ -1,0 +1,12 @@
+Olá, tudo bem?
+
+Você se cadastrou no Eventex com os seguintes dados:
+
+Nome: {{ name }}
+CPF: {{ cpf }}
+Email: {{ email }}
+Telefone: {{ phone }}
+
+Se houver algum problema, favor entrar em contato.
+
+Obrigado e aguarde mais notícias!
