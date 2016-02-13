@@ -3,6 +3,7 @@
 Sistema de Eventos encomendado pela Morena
 
 [![Build Status](https://travis-ci.org/Golker/wttd.svg?branch=master)](https://travis-ci.org/Golker/wttd)
+[![Code Health](https://landscape.io/github/Golker/wttd/master/landscape.svg?style=flat)](https://landscape.io/github/Golker/wttd/master)
 
 ## Como desenvolver?
 
