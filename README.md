@@ -19,7 +19,7 @@ git clone git@github.com:Golker/wttd.git wttd
 cd wttd
 python -m virtualenv .wttd
 source .wttd/bin/activate
-pip install -r requirements.txt
+pip install -r requirements-dev.txt
 cp contrib/env-sample .env
 python manage.py test
 ```
