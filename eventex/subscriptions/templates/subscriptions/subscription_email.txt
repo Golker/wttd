@@ -9,4 +9,4 @@ Telefone: {{ phone }}
 
 Se houver algum problema, favor entrar em contato.
 
-Obrigado e aguarde mais notícias!
+Obrigado e aguarde mais notícias!!
