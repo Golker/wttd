@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'test_without_migrations',
     'django_extensions',  # only for local dev, to be able to run ipython
     'eventex.core',
-    'eventex.subscriptions',
+    'eventex.subscriptions.apps.SubscriptionsConfig',
 ]
 
 
