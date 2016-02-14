@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    # 'django_extensions',  # only for local development
+    'test_without_migrations',
+    'django_extensions',  # only for local dev, to be able to run ipython
     'eventex.core',
     'eventex.subscriptions',
 ]
