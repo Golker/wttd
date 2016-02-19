@@ -5,17 +5,25 @@
     <div class="talks content row padding-bottom-3 desktop-12 container">
         <h2>Manhã</h2>
         {% for talk in morning_talks %}
-        {% include 'core/talk_list_snippet.html' with talk=talk only %}
+        {% include 'core/talk_list_snippet.html' with activity=talk only %}
         {% empty %}
         <p>Ainda não existem palestras de manhã.</p>
         {% endfor %}
 
         <h2>Tarde</h2>
         {% for talk in afternoon_talks %}
-        {% include 'core/talk_list_snippet.html' with talk=talk only %}
+        {% include 'core/talk_list_snippet.html' with activity=talk only %}
         {% empty %}
         <p>Ainda não existem palestras de tarde.</p>
         {% endfor %}
+
+        <h2>Mini-Cursos</h2>
+        {% for course in courses %}
+        {% include 'core/talk_list_snippet.html' with activity=course only %}
+        {% empty %}
+        <p>Ainda não existem palestras de tarde.</p>
+        {% endfor %}
+
     </div>
 </section>
 {% endblock content %}
