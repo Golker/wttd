@@ -21,8 +21,11 @@ class SubscribePostValid(TestCase):
         self.assertEqual(expect, self.email.from_email)
 
     def test_subscription_email_to(self):
-        """ Email recipient should match 'lucabezerra@gmail.com' """
-        expect = ['lucabezerra@gmail.com']
+        """
+        Email recipient should match 'lucabezerra@gmail.com' twice, as 'from'
+         and 'to' roles.
+        """
+        expect = ['lucabezerra@gmail.com', 'lucabezerra@gmail.com']
         self.assertEqual(expect, self.email.to)
 
     def test_subscription_email_body(self):
